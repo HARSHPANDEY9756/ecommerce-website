@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShopEasy - Your one-stop shop for amazing products">
+    <title>ShopEasy | E-Commerce Store</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">
+                    <i class="fas fa-shopping-bag"></i> ShopEasy
+                </a>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#products" class="nav-link">Products</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-actions">
+                    <button class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </button>
+                    <button class="menu-toggle" id="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to ShopEasy</h1>
+                <p class="hero-subtitle">Discover amazing products at unbeatable prices</p>
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Free Shipping</h3>
+                    <p>On all orders over $50</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Easy Returns</h3>
+                    <p>30-day return policy</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-lock"></i>
+                    <h3>Secure Payment</h3>
+                    <p>100% secure checkout</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>24/7 Support</h3>
+                    <p>Always here to help</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Featured Products</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-overlay" id="cart-overlay"></div>
+        <div class="cart-content">
+            <div class="cart-header">
+                <h2>Your Shopping Cart</h2>
+                <button class="close-cart" id="close-cart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will be loaded here -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span class="total-price" id="total-price">$0.00</span>
+                </div>
+                <button class="checkout-btn" id="checkout-btn">
+                    Proceed to Checkout
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>ShopEasy</h3>
+                    <p>Your trusted online shopping destination</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> support@shopeasy.com</li>
+                        <li><i class="fas fa-phone"></i> +1 234 567 890</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
